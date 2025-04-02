@@ -161,13 +161,12 @@
         .result-section {
             text-align: center;
             padding: 40px;
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-            border-radius: 25px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             display: none;
             position: relative;
             overflow: hidden;
-            border: 2px solid #e8f5e9;
         }
 
         .result-section::before {
@@ -177,7 +176,6 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://images.unsplash.com/photo-1593691509543-c55fb32e5cee?w=800&auto=format');
             background-size: cover;
             background-position: center;
             opacity: 0.05;
@@ -193,107 +191,112 @@
             font-size: 5em;
             margin-bottom: 20px;
             animation: bounce 2s infinite;
-            background: linear-gradient(135deg, #2f940b 0%, #1f6b08 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .superfood-name {
-            font-size: 2.5em;
+            font-size: 2em;
             color: #2f940b;
             margin-bottom: 15px;
-            font-weight: 700;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        .personalized-message {
-            font-size: 1.4em;
-            color: #2f940b;
-            margin: 20px 0;
-            font-weight: 600;
-            line-height: 1.6;
-            padding: 15px 25px;
-            background: rgba(47, 148, 11, 0.1);
-            border-radius: 15px;
-            display: inline-block;
-            animation: fadeInUp 0.8s ease;
         }
 
         .superfood-description {
             font-size: 1.2em;
             color: #666;
-            margin: 30px auto;
-            line-height: 1.8;
-            max-width: 600px;
-            padding: 20px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            animation: fadeInUp 1s ease;
+            margin-bottom: 30px;
+            line-height: 1.6;
         }
 
-        .result-actions {
+        .result-links {
             display: flex;
             gap: 20px;
             justify-content: center;
-            margin: 40px 0;
+            margin: 30px 0;
             flex-wrap: wrap;
-            animation: fadeInUp 1.2s ease;
         }
 
-        .action-btn {
+        .result-link {
             display: inline-flex;
             align-items: center;
-            padding: 18px 35px;
+            background: #2f940b;
+            color: white;
+            padding: 15px 30px;
             border-radius: 30px;
             text-decoration: none;
-            font-weight: 600;
             transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1.1em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(47, 148, 11, 0.2);
         }
 
-        .action-btn i {
-            margin-right: 12px;
-            font-size: 1.3em;
+        .result-link:hover {
+            background: #1f6b08;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(47, 148, 11, 0.3);
         }
 
-        .download-btn {
-            background: linear-gradient(135deg, #2f940b 0%, #1f6b08 100%);
+        .result-link i {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .package-recommendation {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 2px solid #e9ecef;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .package-link {
+            display: inline-flex;
+            align-items: center;
+            background: #2f940b;
             color: white;
-            box-shadow: 0 4px 15px rgba(47, 148, 11, 0.3);
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(47, 148, 11, 0.2);
         }
 
-        .download-btn:hover {
+        .package-link:hover {
+            background: #1f6b08;
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(47, 148, 11, 0.4);
+            box-shadow: 0 6px 20px rgba(47, 148, 11, 0.3);
         }
 
-        .retake-btn {
-            background: white;
-            color: #2f940b;
-            border: 2px solid #2f940b;
+        .package-link i {
+            margin-right: 10px;
+            font-size: 1.2em;
         }
 
-        .retake-btn:hover {
-            background: #e8f5e9;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        .download-guide {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .download-button {
+            display: inline-block;
+            background: #2f940b;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: #1f6b08;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes bounce {
@@ -317,116 +320,6 @@
             .options-grid {
                 grid-template-columns: 1fr;
             }
-
-            .result-section {
-                padding: 30px 20px;
-            }
-
-            .superfood-name {
-                font-size: 2em;
-            }
-
-            .personalized-message {
-                font-size: 1.2em;
-                padding: 12px 20px;
-            }
-
-            .result-actions {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .action-btn {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-
-        #footer {
-            background: #1a1a1a;
-            color: white;
-            padding: 60px 0 20px;
-            margin-top: 60px;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            padding: 0 20px;
-        }
-
-        .footer-section h3 {
-            color: #2f940b;
-            margin-bottom: 20px;
-            font-size: 1.2em;
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section ul li a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section ul li a:hover {
-            color: #2f940b;
-        }
-
-        .footer-section p {
-            margin-bottom: 10px;
-            color: #ccc;
-        }
-
-        .social-links {
-    display: flex;
-    flex-direction: column; /* Stack links vertically */
-    gap: 10px; /* Adjust space between links */
-}
-
-.social-links a {
-    color: white;
-    font-size: 1.2em; /* Reduce size */
-    transition: color 0.3s ease;
-    text-decoration: none; /* Remove underline */
-}
-
-.social-links a:hover {
-    color: #2f940b;
-}
-
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #333;
-        }
-
-        .footer-bottom p {
-            color: #888;
-            font-size: 0.9em;
-        }
-
-        @media (max-width: 768px) {
-            .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .social-links {
-                justify-content: center;
-            }
         }
     </style>
 </head>
@@ -447,7 +340,7 @@
             <h2 class="question-text">What's your main health goal?</h2>
             <div class="options-grid">
                 <div class="option-card" data-value="immunity">
-                    <h3>Booadd  vst Immunity</h3>
+                    <h3>Boost Immunity</h3>
                     <p>Strengthen your body's natural defenses</p>
                 </div>
                 <div class="option-card" data-value="digestion">
@@ -556,51 +449,31 @@
         <div class="result-section">
             <div class="superfood-icon">🌿</div>
             <h2 class="superfood-name">Your Perfect Superfood Match</h2>
-            <p class="personalized-message"></p>
             <p class="superfood-description"></p>
-            <div class="result-actions">
-                <a href="#" class="action-btn download-btn">
-                    <i class="fas fa-download"></i> Download Your Superfood Guide
+            <div class="package-recommendation">
+                <h3>Recommended Wellness Package</h3>
+                <p>Based on your health goals and preferences, we recommend our Basic Wellness Package.</p>
+                <a href="index.html#wellness-articles .wellness-article.basic" class="package-link">
+                    <i class="fas fa-star"></i> Learn More About Basic Wellness Package
                 </a>
-                <button class="action-btn retake-btn" onclick="retakeQuiz()">
-                    <i class="fas fa-redo"></i> Retake Quiz
-                </button>
+            </div>
+            <div class="result-links">
+                <a href="#nutritional-insights" class="result-link">
+                    <i class="fas fa-leaf"></i> Learn More About Your Superfood
+                </a>
+                <a href="#" class="result-link">
+                    <i class="fas fa-download"></i> Download Superfood Guide
+                </a>
+            </div>
+            <div class="download-guide">
+                <h3>Want to learn more about African superfoods?</h3>
+                <p>Download our comprehensive Superfoods Guide!</p>
+                <a href="#" class="download-button">
+                    <i class="fas fa-file-pdf"></i> Download Guide (PDF)
+                </a>
             </div>
         </div>
     </div>
-
-    <footer id="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Main Home</a></li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="index.html#wellness-articles">Programs</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: info@healthandwellness.com</p>
-                <p>Phone: +254 123 456 789</p>
-                <p>Address: Nairobi, Kenya</p>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/health_and_wellness_254?igsh=ajh6M3MwNXhrbjBq" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href="https://www.tiktok.com/@wholebodywellness29?_t=ZM-8upmIcXGKUX&_r=1" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
-                    <a href="https://www.youtube.com/@healthandwellnessspot" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-                    <a href="https://x.com/NutritionTipzzz?t=PKk7m4TR4_QXq7apO0rPdw&s=08" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://www.pinterest.com/wholeb0dywellness/" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Health & Wellness. All rights reserved.</p>
-        </div>
-    </footer>
 
     <script>
         const questions = document.querySelectorAll('.quiz-question');
@@ -685,28 +558,35 @@
             document.querySelector('.superfood-name').textContent = superfood.name;
             document.querySelector('.superfood-description').textContent = superfood.description;
             
-            // Add personalized message with animation
-            const personalizedMessage = `Great choice! Your body craves ${superfood.name}. This nutrient powerhouse will help you achieve your wellness goals!`;
-            const messageElement = document.querySelector('.personalized-message');
-            messageElement.textContent = personalizedMessage;
-            messageElement.style.opacity = '0';
-            messageElement.style.transform = 'translateY(20px)';
+            // Update the package recommendation section
+            const packageSection = document.querySelector('.package-recommendation');
+            let packageText = '';
+            let packageLink = '';
             
-            // Trigger animations
-            setTimeout(() => {
-                messageElement.style.opacity = '1';
-                messageElement.style.transform = 'translateY(0)';
-            }, 100);
+            switch(superfood.package) {
+                case 'basic':
+                    packageText = 'Basic Wellness Package';
+                    packageLink = 'index.html#wellness-articles .wellness-article.basic';
+                    break;
+                case 'premium':
+                    packageText = 'Premium Wellness Journey';
+                    packageLink = 'index.html#wellness-articles .wellness-article.premium';
+                    break;
+                case 'family':
+                    packageText = 'Family Wellness Plan';
+                    packageLink = 'index.html#wellness-articles .wellness-article.family';
+                    break;
+            }
+            
+            packageSection.innerHTML = `
+                <h3>Recommended Wellness Package</h3>
+                <p>Based on your health goals and preferences, we recommend our ${packageText}.</p>
+                <a href="${packageLink}" class="package-link">
+                    <i class="fas fa-star"></i> Learn More About ${packageText}
+                </a>
+            `;
             
             resultSection.classList.add('active');
-        }
-
-        function retakeQuiz() {
-            currentQuestion = 1;
-            answers = [];
-            document.querySelectorAll('.option-card').forEach(card => card.classList.remove('selected'));
-            document.querySelector('.result-section').classList.remove('active');
-            showQuestion(1);
         }
     </script>
 </body>
