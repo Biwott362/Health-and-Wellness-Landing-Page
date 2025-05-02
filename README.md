@@ -1,4 +1,4 @@
-# 🧘‍♀️ Health & Wellness Landing Page 
+#  Health & Wellness Landing Page 
 This is a responsive Health and Wellness Landing Page designed to promote a balanced lifestyle for the mind, body, and spirit. 
 <br/> 
 The page highlights essential services, healthy living tips, and wellness resources to inspire users to take control of their well-being.
