@@ -19,7 +19,7 @@ The page highlights essential services, healthy living tips, and wellness resour
 ## Home Page 
 ![Alt text](https://raw.githubusercontent.com/Biwott362/Health-and-Wellness-Landing-Page/refs/heads/Sharon/Screenshot%202025-04-25%20123849.png)
 
-## Worshop 
+## Workshop 
 ### (Some workshop details)
 ![Alt text](https://raw.githubusercontent.com/Biwott362/Health-and-Wellness-Landing-Page/refs/heads/Sharon/Screenshot%202025-04-25%20124028.png)
 
